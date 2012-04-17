@@ -14,21 +14,18 @@ def get_list():
 
 x = get_list()	#creates a list containing string versions of the numbers you entered
 a=[]		#creates an empty array	
-for i in x:
-	c = int(i)			#turns the list of strings into integers
-	for j in range(2,c):
-		n = c % j
-		if n == 0:
-			a.insert((j-2),1)
-		else:
-			if not a: 
-				break
-			else:
-				a=[]		#if the factors of the number are divisible,
 
-		break				#1 gets deposited into array a. if not, array
-						#a will be empty
-	if not a:
-  		print '{} is a prime number'.format(c)	#if array is empty, this is printed
+for i in x:
+	c = int(i)	
+	for j in range(2,c):
+		a = []
+		if c%j ==0:
+			a.insert((j-2),1)
+			break
+		else:
+			a.insert((j-2),2)
+	y = a.count(1)
+	if y == 0:
+  		print '{} is a prime number'.format(c)
 	else:
-		print '{} is not a prime number'.format(c)  #if array is not empty, this is printed.
+		print '{} is not a prime number'.format(c)  
