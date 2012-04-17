@@ -1,5 +1,0 @@
-x = int(raw_input("Please enter an integer: "))
-if x%2==0:
-    print '{} is even'.format(x)
-else:
-    print '{} is odd'.format(x)
