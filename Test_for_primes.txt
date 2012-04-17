@@ -24,7 +24,8 @@ for i in x:
 			if not a: 
 				break
 			else:
-				a.pop()		#if the factors of the number are divisible,
+				a=[]		#if the factors of the number are divisible,
+
 		break				#1 gets deposited into array a. if not, array
 						#a will be empty
 	if not a:
