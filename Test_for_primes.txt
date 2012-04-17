@@ -12,10 +12,10 @@ def get_list():
 		return None
 	return mylist.split(",")
 
-x = get_list()
-a=[]
+x = get_list()	#creates a list containing string versions of the numbers you entered
+a=[]		#creates an empty array	
 for i in x:
-	c = int(i)
+	c = int(i)			#turns the list of strings into integers
 	for j in range(2,c):
 		n = c % j
 		if n == 0:
@@ -24,10 +24,10 @@ for i in x:
 			if not a: 
 				break
 			else:
-				a.pop()
-		break
-
+				a.pop()		#if the factors of the number are divisible,
+		break				#1 gets deposited into array a. if not, array
+						#a will be empty
 	if not a:
-  		print '{} is a prime number'.format(c)
+  		print '{} is a prime number'.format(c)	#if array is empty, this is printed
 	else:
-		print '{} is not a prime number'.format(c)
+		print '{} is not a prime number'.format(c)  #if array is not empty, this is printed.
