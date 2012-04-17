@@ -19,12 +19,15 @@ for i in x:
 	for j in range(2,c):
 		n = c % j
 		if n == 0:
-			a.insert((j-2),n)
+			a.insert((j-2),1)
 		else:
-			break
+			if not a: 
+				break
+			else:
+				a.pop()
+		break
 
 	if not a:
   		print '{} is a prime number'.format(c)
 	else:
 		print '{} is not a prime number'.format(c)
-
