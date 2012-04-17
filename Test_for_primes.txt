@@ -3,18 +3,16 @@ def get_list():
 	if mylist.startswith('['):
 		mylist  = mylist[1:]
 	else:
-		print "lists must start with a [!"
-		return None
+		print "lists must be in the form [number]!"
+		exit()
 	if mylist.endswith(']'):
 		mylist  = mylist[:-1]
 	else:
 		print "you forgot the ] on the end!"
-		return None
+		exit()
 	return mylist.split(",")
-
-x = get_list()	#creates a list containing string versions of the numbers you entered
-a=[]		#creates an empty array	
-
+x = get_list()
+a=[]		
 for i in x:
 	c = int(i)	
 	for j in range(2,c):
