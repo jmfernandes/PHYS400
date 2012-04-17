@@ -1,0 +1,30 @@
+def get_list():
+	mylist  = raw_input("Enter a  list: ").strip()
+	if mylist.startswith('['):
+		mylist  = mylist[1:]
+	else:
+		print "lists must start with a [!"
+		return None
+	if mylist.endswith(']'):
+		mylist  = mylist[:-1]
+	else:
+		print "you forgot the ] on the end!"
+		return None
+	return mylist.split(",")
+
+x = get_list()
+a=[]
+for i in x:
+	c = int(i)
+	for j in range(2,c):
+		n = c % j
+		if n == 0:
+			a.insert((j-2),n)
+		else:
+			break
+
+	if not a:
+  		print '{} is a prime number'.format(c)
+	else:
+		print '{} is not a prime number'.format(c)
+
