@@ -1,0 +1,8 @@
+n = int(raw_input("Enter a positive integer:"))
+def factorial(n): 
+	if n==0:		return 1 
+	else:		recurse = factorial(n-1) 
+		result = n * recurse 
+		return result
+
+factorial(n)
