@@ -1,0 +1,26 @@
+def get_list():
+	mylist  = raw_input("Enter a  list: ").strip()
+	if mylist.startswith('['):
+		mylist  = mylist[1:]
+	else:
+		print "lists must be in the form [number]!"
+		exit()
+	if mylist.endswith(']'):
+		mylist  = mylist[:-1]
+	else:
+		print "you forgot the ] on the end!"
+		exit()
+	return mylist.split(",")
+L = get_list()
+a = []
+n = [] 
+for j in L:
+	c = int(j) 
+    	n.append(c) 
+for i in range(len(L)):
+	c = int(i)
+	if i == 0:
+		a.insert(i,n[0])
+	else:
+		a.insert(i,n[i] + n[i-1])
+print a
