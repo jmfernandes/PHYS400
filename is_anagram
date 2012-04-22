@@ -1,8 +1,6 @@
 input = raw_input("enter two phrases or words separated by a comma: ")
 input_list = input.split(',')
 input_list2 = [0] * len(input_list)
-
-print input_list
 for i in range(len(input_list)):
 	h = input_list[i]
 	g = list(h)
