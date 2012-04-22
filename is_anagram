@@ -19,3 +19,5 @@ for k in range(len(input_list2)):
 		else:
 			if input_list2[k] == input_list2[p]:
 				print '"{}" is an anagram for "{}"'.format(input_list[k],input_list[p])
+			else:
+				print 'none of the phrases given are anagrams'
