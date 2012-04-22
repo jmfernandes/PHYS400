@@ -1,0 +1,22 @@
+a = 'anagram'
+b = 'nag a ram'
+c = list(a)
+d = list(b)
+for i in range(len(c)):	
+	if ' ' in c:
+		c.remove(' ')
+	else:
+		break
+for i in range(len(d)):	
+	if ' ' in d:
+		d.remove(' ')
+	else:
+		break
+c.sort()
+d.sort()
+print c
+print d
+if c == d:
+	print 'true'
+else:
+	print 'false'
