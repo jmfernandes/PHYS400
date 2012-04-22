@@ -21,22 +21,3 @@ for k in range(len(input_list2)):
 		else:
 			if input_list2[k] == input_list2[p]:
 				print '"{}" is an anagram for "{}"'.format(input_list[k],input_list[p])
-
-
-exit()
-for i in range(len(c)):	
-	if ' ' in c:
-		c.remove(' ')
-	else:
-		break
-for i in range(len(d)):	
-	if ' ' in d:
-		d.remove(' ')
-	else:
-		break
-c.sort()
-d.sort()
-if c == d:
-	print 'true: this is an anagram'
-else:
-	print 'false: not an anagram'
