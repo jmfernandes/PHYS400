@@ -10,3 +10,4 @@ def print_point(p):	print '(%g, %g)' % (p.x, p.y)
 print_point(blank)
 
 print 'check'
+print 'hey'
