@@ -1,0 +1,18 @@
+import math
+ 
+class Point(object):
+        """represents a point in 2-D space"""
+ 
+def distance(p1, p2):
+        distance = math.sqrt((p2.x - p1.x)**2 + (p2.y - p1.y)**2)
+        return distance
+ 
+p1 = Point()
+p2 = Point()
+ 
+p1.x = 3
+p1.y = 2
+p2.x = 4
+p2.y = 3
+ 
+print(distance(p1, p2))
