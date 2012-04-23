@@ -8,3 +8,5 @@ print '(%g, %g)' % (blank.x, blank.y)
 import mathdistance = math.sqrt(blank.x**2 + blank.y**2)print distance
 def print_point(p):	print '(%g, %g)' % (p.x, p.y)
 print_point(blank)
+
+print 'check'
