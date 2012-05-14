@@ -8,6 +8,17 @@ print '(%g, %g)' % (blank.x, blank.y)
 import mathdistance = math.sqrt(blank.x**2 + blank.y**2)print distance
 def print_point(p):	print '(%g, %g)' % (p.x, p.y)
 print_point(blank)
-
-print 'check'
-print 'hey'
+class Rectangle(object): 
+	"""represent a rectangle.attributes: width, height, corner. """
+box = Rectangle() 
+box.width = 500.0 
+box.height = 200.0 
+box.corner = Point() 
+box.corner.x = 0.0 
+box.corner.y = 0.0
+def find_center(box): 
+	p = Point()	p.x = box.corner.x + box.width/2.0 
+	p.y = box.corner.y + box.height/2.0 
+	return p
+center = find_center(box)print_point(center)
+print "i like this"
