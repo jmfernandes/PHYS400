@@ -1,3 +1,83 @@
+#class traffic:
+#	name = "traffic"
+#	def __init__(self,arg1):
+#		self.value1 = arg1
+#	def display(self):
+#		print self.name
+#		print self.value1
+
+#import random
+
+#class car(traffic):
+#	def __init__(self):
+#		B = random.randint(0,10)
+#		print B
+	
+
+#C = car()
+
+
+
+
+
+
+
+
+
+
+
+
+#exit()
+#from Tkinter import *
+
+#root = Tk()
+
+#w = Label(root, width=30, height=30, text="Hello, world!")
+#w.pack() # need this to show text
+
+#root.mainloop()
+
+#exit()
+
+
+
+#import Tkinter as tk
+#import time
+#root=tk.Tk()
+#root.title("Traffic Simulation")
+#canvas = tk.Canvas(root, width=1000, height=400, bg="#FFFFFF")
+#canvas.pack()
+# make roads
+#road_data = [
+#  (140,150,200,150,200,150,200,50),
+#  (250,150,250,50,250,150,374,150,374,150,374,50),
+#  (424,150,424,50,424,150,542,150,542,150,542,50),
+#  (592,150,592,50,592,150,674,150,674,150,674,50),
+#  (724,150,724,50,724,150,850,150),
+#  (140,200,200,200,200,200,200,300),
+#  (250,200,250,300,250,200,344,200,344,200,344,300),
+#  (394,200,394,300,394,200,542,200,542,200,542,300),
+#  (592,200,592,300,592,200,674,200,674,200,674,300),
+#  (724,200,724,300,724,200,850,200),
+#  ]
+#for t in road_data:
+#  canvas.create_line(t, width=5)
+
+#root.mainloop()
+
+
+
+
+#exit()
+#class traffic:
+#	pass
+#car = traffic()
+
+#car.speed = 1
+
+
+
+#exit()
 a = [0] * 10
 V = 1
 del a[0]
@@ -5,7 +85,7 @@ a.insert(0,1)
 print a
 for i in range(6):
 	t = a.index(1)
-	k = 3
+	k = 4
 	j = t + k*V
 	#print j
 	if j < len(a):

@@ -1,7 +1,11 @@
-input = raw_input("enter two phrases or words separated by a comma: ")
+input = raw_input("enter multiple phrases or words separated by a comma: ")
 input_list = input.split(',')
 input_list2 = [0] * len(input_list)
 a = [2]
+if len(input_list) == 1:
+	print 'separate the words with commas'
+	exit()
+
 for i in range(len(input_list)):
 	h = input_list[i]
 	g = list(h)
@@ -20,10 +24,11 @@ for k in range(len(input_list2)):
 		else:
 			if input_list2[k] == input_list2[p]:
 				print '"{}" is an anagram for "{}"'.format(input_list[k],input_list[p])
-				a = [1]
+				a.append(1)
 			else:
-				y = a.count(1)
-				if y == 0:
-					print 'none of the given words are anagrams'
-				else:
-					pass				 
+				pass
+y = a.count(1)
+if y == 0:
+	print 'none of the given words are anagrams'
+else:
+	pass				 

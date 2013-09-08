@@ -10,20 +10,31 @@ def get_list():
 	else:
 		print "you forgot the ] on the end!"
 		exit()
+	#search = ','
+	#for sublist in mylist:
+    	#	if sublist[1] == search:
+        #		pass
+	#else:
+	#	print "don't forget to separate numbers with commas"
+	#	exit()
 	return mylist.split(",")
 x = get_list()
 a=[]		
 for i in x:
-	c = int(i)	
-	for j in range(2,c):
-		a = []
-		if c%j ==0:
-			a.insert((j-2),1)
-			break
+	c = int(i)
+	if c > 0:	
+		for j in range(2,c):
+			a = []
+			if c%j ==0:
+				a.insert((j-2),1)
+				break
+			else:
+				a.insert((j-2),2)
+		y = a.count(1)
+		if y == 0:
+  			print '{} is a prime number'.format(c)
 		else:
-			a.insert((j-2),2)
-	y = a.count(1)
-	if y == 0:
-  		print '{} is a prime number'.format(c)
+			print '{} is not a prime number'.format(c)
 	else:
-		print '{} is not a prime number'.format(c)  
+		print 'please enter only positive integers'
+		exit()  
